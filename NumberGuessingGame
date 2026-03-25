@@ -1,6 +1,8 @@
 #Zahlen-Ratespiel
-while True:
-    print("Erraten Sie die Zahl zwischen 1 und 20.")
+print("Erraten Sie die Zahl zwischen 1 und 20.")
+print("Sie haben 10 Versuche.")
+
+for i in range (1, 11):
     Number = 12
     Chosen_Number = int(input("Eingabe ihrer Wahl: "))
     if Chosen_Number > Number:
@@ -10,3 +12,8 @@ while True:
     else:
         print("richtig!")
         break
+    if i == 10:
+        print("leider verloren")
+        break
+    else:
+        i + 1
