@@ -1,0 +1,12 @@
+#Zahlen-Ratespiel
+while True:
+    print("Erraten Sie die Zahl zwischen 1 und 20.")
+    Number = 12
+    Chosen_Number = int(input("Eingabe ihrer Wahl: "))
+    if Chosen_Number > Number:
+        print("zu groß!")
+    elif Chosen_Number < Number:
+        print("zu klein!")
+    else:
+        print("richtig!")
+        break
